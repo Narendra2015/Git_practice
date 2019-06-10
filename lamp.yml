@@ -1,5 +1,4 @@
----
-- hosts: webservers
+---- hosts: 127.0.0.1
   connections: ssh
   tasks:
 
