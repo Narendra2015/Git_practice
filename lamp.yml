@@ -1,4 +1,5 @@
-   connections: ssh
+ - hosts: webservers
+ connections: ssh
   tasks:
 
     - name: install PHP
