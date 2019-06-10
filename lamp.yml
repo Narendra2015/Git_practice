@@ -1,5 +1,4 @@
-- hosts: 127.0.0.1
-  connections: ssh
+   connections: ssh
   tasks:
 
     - name: install PHP
