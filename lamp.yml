@@ -1,0 +1,28 @@
+---
+- hosts: webservers
+  connections: ssh
+  tasks:
+
+    - name: install PHP
+      yum: 
+       name: PHP-8.6
+       state: present
+    - name: start the apache service
+      service: 
+       name: httd
+       state: restarted
+   - name: enabled httpd
+     service:
+       name: httpd
+       state: enabled
+   - name: enable htop
+     yum:
+       name: htop
+       state: present
+  - name: install git
+    yum: 
+      name: git
+      state: present
+ 
+
+
